@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "author": "jimmy.su",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-custom-board",
+      "id": "C3MikroE2",
+      "top": -10.67,
+      "left": -189.33,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 22.58,
+      "left": -135.38,
+      "rotate": 180,
+      "attrs": { "color": "blue", "flip": "1" }
+    },
+    { "type": "board-ssd1306", "id": "oled1", "top": 89.3, "left": -187.16, "attrs": {} }
+  ],
+  "connections": [
+    [ "led1:A", "C3MikroE2:3V3.0", "yellow", [ "v0" ] ],
+    [ "led1:C", "C3MikroE2:LED0", "black", [ "v0" ] ],
+    [ "C3MikroE2:DI", "rgb1:DIN", "green", [ "v-60.64", "h39.94" ] ],
+    [ "rgb1:VDD", "C3MikroE2:5V.1", "red", [ "h-46.84", "v94.23" ] ],
+    [ "rgb1:VSS", "C3MikroE2:GND.2", "black", [ "v-1.11", "h55.16", "v90" ] ],
+    [ "C3MikroE2:DI19", "rgb1:DIN", "green", [ "v-63.98", "h38.6" ] ],
+    [ "C3MikroE2:GND.3", "oled1:GND", "black", [ "v0" ] ],
+    [ "C3MikroE2:3V3.2", "oled1:VCC", "red", [ "v0" ] ],
+    [ "C3MikroE2:SCL9.1", "oled1:SCL", "cyan", [ "v0" ] ],
+    [ "C3MikroE2:SDA8.1", "oled1:SDA", "magenta", [ "v0" ] ]
+  ]
+}
