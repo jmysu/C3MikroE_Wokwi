@@ -53,44 +53,20 @@
 
     /*LED*/
     "LED0":  { "x": 18, "y": 9.5, "target": "GPIO0" },
-    "3V3.0":{ "x": 21, "y": 9.5, "target": "power(3.3)" }
+    "3V3.0": { "x": 21, "y": 9.5, "target": "power(3.3)" },
+    "NEO19":  { "x":  5,  "y": 6.0, "target": "GPIO19" },
   },
 
   /* On-board LED definitions. These only draw the light of the LED when it's on. 
      You should draw the body of the LED in your .svg file. */
   "leds": [
-    {
+       {
       /* A unique identifier of the LED on the board */
-      "id": "power",
+      "id": "rgb0",
 
       /* x/y positions of the LED center, in mm. Relative to the top-left corner of the board */
-      "x": 4.2,
-      "y": 31.54,
-
-      /* Supported LED types: 0603, ws2812, apa102, rgb */
-      "type": "0603",
-
-      /* LED color - only relevant for 0603 LEDs */
-      "color": "red",
-
-      /* The PINs object defines how the LED pins connect to the MCU pins. The LED pin names depend on the type of the LED:
-         - 0603 - "A" for Anode, "C" for cathode
-         - ws2812 - "DI" for data input
-         - apa102 - "DI" for data input, "CI" for clock output
-         - rgb - "R" for red input, "G" for green input, "B" for blue input, "C" for cathode, "A" for anode (define either A or C, not both)
-      */
-      "pins": {
-        "A": "3V3.1", // This is a power LED, so it's always on
-        "C": "GND.1"
-      }
-    },
-    {
-      /* A unique identifier of the LED on the board */
-      "id": "rgb1",
-
-      /* x/y positions of the LED center, in mm. Relative to the top-left corner of the board */
-      "x": 19.31,
-      "y": 21.28,
+      "x": 6.75,
+      "y": 4.50,
 
       /* Supported LED types: 0603, ws2812, apa102, rgb */
       "type": "ws2812",
@@ -102,7 +78,7 @@
          - rgb - "R" for red input, "G" for green input, "B" for blue input, "C" for cathode, "A" for anode (define either A or C, not both)
       */
       "pins": {
-        "DI": "8"        
+        "DI": "NEO19"        
       }
     }
   ]
