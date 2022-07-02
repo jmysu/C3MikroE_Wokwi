@@ -54,7 +54,12 @@
     /*LED*/
     "LED0":  { "x": 18, "y": 9.5, "target": "GPIO0" },
     "3V3.0": { "x": 21, "y": 9.5, "target": "power(3.3)" },
-    "NEO19":  { "x":  5,  "y": 6.0, "target": "GPIO19" },
+    "NEO19": { "x":  5, "y": 6.0, "target": "GPIO19" },
+    /*OLED*/
+    "GND.3": { "x": 10.5, "y": 24.0, "target": "GND" },
+    "3V3.2": { "x": 13.2, "y": 24.0, "target": "power(3.3)" },
+    "SCL9.1":{ "x": 15.7, "y": 24.0, "target": "GPIO9" },
+    "SDA8.1":{ "x": 18.0, "y": 24.0, "target": "GPIO8" },
   },
 
   /* On-board LED definitions. These only draw the light of the LED when it's on. 
