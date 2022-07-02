@@ -7,7 +7,7 @@ Customize C3MikroE for Wokwi simulation
 <br>
 <br>
 
-<img src= "pic/WokwiC3MikroE_WS2812LED.gif" width=480>   C3MikroE BuiltIn Neopixel Simulation
+<img src= "pic/WokwiC3MikroE_NeopixelLED.gif" width=480>   C3MikroE BuiltIn Neopixel Simulation
 
 <br>
 
