@@ -52,7 +52,7 @@
     "GND.2":{ "x": 26, "y": 21.0, "target": "GND" },   
 
     /*LED*/
-    "LED0":  { "x": 18.0, "y": 9.0, "target": "GPIO0" },
+    "LED0":  { "x": 18.5, "y": 9.0, "target": "GPIO0" },
     "3V3.0": { "x": 21.5, "y": 9.0, "target": "power(3.3)" },
     "NEO19": { "x":  5.0, "y": 5.0, "target": "GPIO19" },
     /*OLED*/
@@ -70,7 +70,7 @@
       "id": "rgb0",
 
       /* x/y positions of the LED center, in mm. Relative to the top-left corner of the board */
-      "x": 7.0,
+      "x": 7.25,
       "y": 3.5,
 
       /* Supported LED types: 0603, ws2812, apa102, rgb */
