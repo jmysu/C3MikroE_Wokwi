@@ -15,6 +15,7 @@ void setup() {
   Serial.println("Hello, ESP32-C3-MikroE!");
   pinMode(0, OUTPUT);
   pixels.begin();
+  pwm.printPinsStatus();
 }
 
 int r = 150;
