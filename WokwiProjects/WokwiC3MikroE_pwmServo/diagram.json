@@ -1,0 +1,42 @@
+{
+  "version": 1,
+  "author": "jimmy.su",
+  "editor": "wokwi",
+  "parts": [
+    {
+      "type": "wokwi-custom-board",
+      "id": "C3MikroE2",
+      "top": -6.01,
+      "left": -281.33,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": 33.25,
+      "left": -227.37,
+      "rotate": 180,
+      "attrs": { "color": "blue", "flip": "1" }
+    },
+    {
+      "type": "wokwi-servo",
+      "id": "servo1",
+      "top": -103.87,
+      "left": -429.5,
+      "rotate": 270,
+      "attrs": { "horn": "double", "horncolor": "cyan" }
+    }
+  ],
+  "connections": [
+    [ "C3MikroE2:TX", "$serialMonitor:RX", "", [] ], [ "C3MikroE2:RX", "$serialMonitor:TX", "", []  ],
+    [ "led1:A", "C3MikroE2:3V3.0", "yellow", [ "v0" ] ],
+    [ "led1:C", "C3MikroE2:LED0", "black", [ "v0" ] ],
+    [ "C3MikroE2:DI", "rgb1:DIN", "green", [ "v-60.64", "h39.94" ] ],
+    [ "rgb1:VDD", "C3MikroE2:5V.1", "red", [ "h-46.84", "v94.23" ] ],
+    [ "rgb1:VSS", "C3MikroE2:GND.2", "black", [ "v-1.11", "h55.16", "v90" ] ],
+    [ "C3MikroE2:DI19", "rgb1:DIN", "green", [ "v-63.98", "h38.6" ] ],
+    [ "servo1:GND", "C3MikroE2:GND.1", "black", [ "v0" ] ],
+    [ "C3MikroE2:5V.1", "servo1:V+", "red", [ "h-72.4", "v-28.71" ] ],
+    [ "servo1:PWM", "C3MikroE2:1", "green", [ "v1.57", "h32.5", "v-42.67" ] ]
+  ]
+}
