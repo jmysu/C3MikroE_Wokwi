@@ -28,7 +28,7 @@
     }
   ],
   "connections": [
-    [ "C3MikroE2:TX", "$serialMonitor:RX", "", [] ], [ "C3MikroE2:RX", "$serialMonitor:TX", "", []  ],
+    [ "C3MikroE2:TX21", "$serialMonitor:RX", "", [] ], [ "C3MikroE2:RX20", "$serialMonitor:TX", "", []  ],
     [ "led1:A", "C3MikroE2:3V3.0", "yellow", [ "v0" ] ],
     [ "led1:C", "C3MikroE2:LED0", "black", [ "v0" ] ],
     [ "C3MikroE2:DI", "rgb1:DIN", "green", [ "v-60.64", "h39.94" ] ],
