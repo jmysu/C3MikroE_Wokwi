@@ -18,4 +18,4 @@ Customize C3MikroE for Wokwi simulation
 
 ### References
   - [WOKWI Simulation](https://wokwi.com/)
-  - [WOKWI customizing board](https://github.com/wokwi/wokwi-boards)
+  - [WOKWI Customizing/Loading board](https://github.com/wokwi/wokwi-boards)
