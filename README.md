@@ -14,6 +14,7 @@ Customize C3MikroE for Wokwi simulation
 <img src= "pic/WokwiC3MikroE_Servo.gif" width=480>   C3MikroE PWM Servo Simulation
 <br>
 
+<img src= "pic/WokwiC4MikroEpwmBuzzer.gif" width=480>   C3MikroE PWM Buzzer+Servo Simulation 
 <br>
 
 ### References
